@@ -1,0 +1,90 @@
+@import url('htpps://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto' ,sans-serif;
+}
+body{
+    background: #1c120b;
+    background-size: cover;
+    height: 100vh;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 550px;
+    background: #f4a424 ;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgb(236, 233, 238);
+}
+.wrapper .title h1{
+    color: #3a3628;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.contact.form{
+    display: flex;    ;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40%;
+}
+.input-fields,
+.msg{
+    width: 48%;
+}
+.input-fields .input,
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 3px solid #3a3628;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.671);
+    width: 100%;
+}
+.msg textarea{
+    height: 150px;
+}
+::-webkit-input-placeholder{
+    color: #3a3628;
+}
+::-moz-placeholder{
+    color: #3a3628;
+}
+:-ms-input-placeholder{
+    color: #3a3628;
+}
+.btn{
+    background-image: linear-gradient(135deg, #81FBB8 10%, #3A3628 100%);
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background: #3A3628;
+}
+
+@media screen and (max-width:600px){
+    .contact.form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields
+    .msg{
+        width: 100%;
+    }
+}
